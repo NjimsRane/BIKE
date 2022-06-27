@@ -1,0 +1,75 @@
+.bike {
+  position: absolute;
+  bottom: 14em;
+
+  display: flex;
+  gap: 10em;
+
+  .wheels {
+    position: relative;
+
+    height: 20em;
+    width: 20em;
+    border-radius: 50%;
+
+    background: none;
+
+    border: 20px solid #111;
+
+    &::after {
+      position: absolute;
+      top: -2%;
+      left: -2%;
+      content: "";
+
+      height: 17em;
+      width: 17em;
+      background: none;
+      border-radius: 50%;
+      border: 15px solid rgb(88, 72, 0);
+    }
+
+    .disk {
+      position: absolute;
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+
+      height: 5em;
+      width: 5em;
+      border-radius: 50%;
+
+      background-image: linear-gradient(45deg, #444, #fff, #444);
+    }
+    .rayon {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      border-radius: 20px;
+
+      width: 0.4em;
+      height: 15.5em;
+      background-image: linear-gradient(90deg, #444, #fff, #444);
+    }
+
+    .rayon2 {
+      transform: rotate(30deg);
+    }
+    .rayon3 {
+      transform: rotate(60deg);
+    }
+    .rayon4 {
+      transform: rotate(90deg);
+    }
+
+    .rayon5 {
+      transform: rotate(120deg);
+    }
+    .rayon6 {
+      transform: rotate(150deg);
+    }
+  }
+}

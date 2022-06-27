@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-block: 1em;
+}
+
+.road {
+  position: relative;
+  width: 100%;
+  height: 25em;
+  background-color: #282828;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-block: 1.5em;
+  box-shadow: 0px 60px 5px black;
+}
+.road .whiteLign {
+  position: relative;
+  width: 100%;
+  height: 1.5em;
+  background-color: #fff;
+}
+.road .dashedLign {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  border: 5px dashed #fff;
+}
+
+.bike {
+  position: absolute;
+  bottom: 14em;
+  display: flex;
+  gap: 10em;
+}
+.bike .wheels {
+  position: relative;
+  height: 20em;
+  width: 20em;
+  border-radius: 50%;
+  background: none;
+  border: 20px solid #111;
+}
+.bike .wheels::after {
+  position: absolute;
+  top: -2%;
+  left: -2%;
+  content: "";
+  height: 17em;
+  width: 17em;
+  background: none;
+  border-radius: 50%;
+  border: 15px solid rgb(88, 72, 0);
+}
+.bike .wheels .disk {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  height: 5em;
+  width: 5em;
+  border-radius: 50%;
+  background-image: linear-gradient(45deg, #444, #fff, #444);
+}
+.bike .wheels .rayon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  width: 0.4em;
+  height: 15.5em;
+  background-image: linear-gradient(90deg, #444, #fff, #444);
+}
+.bike .wheels .rayon2 {
+  transform: rotate(30deg);
+}
+.bike .wheels .rayon3 {
+  transform: rotate(60deg);
+}
+.bike .wheels .rayon4 {
+  transform: rotate(90deg);
+}
+.bike .wheels .rayon5 {
+  transform: rotate(120deg);
+}
+.bike .wheels .rayon6 {
+  transform: rotate(150deg);
+}/*# sourceMappingURL=main.css.map */

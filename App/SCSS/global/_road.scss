@@ -1,0 +1,30 @@
+.road {
+  position: relative;
+  width: 100%;
+  height: 25em;
+
+  background-color: #282828;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-block: 1.5em;
+
+  box-shadow: 0px 60px 5px black;
+
+  .whiteLign {
+    position: relative;
+    width: 100%;
+    height: 1.5em;
+    background-color: #fff;
+  }
+
+  .dashedLign {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 100%;
+    border: 5px dashed #fff;
+  }
+}
